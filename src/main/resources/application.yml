@@ -1,0 +1,12 @@
+
+### Configurations  ###
+
+## General ##
+server:
+  port: 8090
+spring:
+  application:
+    name: api-gateway
+  security:
+    user:
+      password: KEVENlolo114--
