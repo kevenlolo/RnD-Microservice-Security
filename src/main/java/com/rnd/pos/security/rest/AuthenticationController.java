@@ -17,14 +17,14 @@ import com.rnd.pos.security.entity.User;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(path = "api/public")
 @RequiredArgsConstructor
 public class AuthenticationController {
 
 	private final AuthenticationManager authenticationManager;
     private final JwtTokenUtil jwtTokenUtil;
 
-    @PostMapping("login")
+    @PostMapping
+    @RequestMapping("/login")
     public ResponseEntity<User> login() {
         try {
             Authentication authenticate = authenticationManager
