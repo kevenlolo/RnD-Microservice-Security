@@ -10,3 +10,8 @@ spring:
   security:
     user:
       password: KEVENlolo114--
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379
